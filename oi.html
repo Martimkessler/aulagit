@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aula 1</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
     <style>
         body {
     font-family: Arial, Helvetica, sans-serif;
@@ -11,7 +12,7 @@
 }
 h1 {
     color: rgb(255, 255, 255);
-    padding: 25px;
+    padding: 5px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 40px;
     font-weight: 500;
@@ -19,16 +20,18 @@ h1 {
 .index {
     background-color: lightcoral;
     width: 50%;
-    height: 500px;
-    margin: 350px;
+    height: 280px;
+    margin:0 auto;
     margin-top: 150px;
     text-align: center;
     box-shadow: 4px 4px 10px black;
     border-radius: 24px;
     
+    
+    
 }
 .index input[type = "text"]{
-    width: 380px;
+    width: 50%;
     height: 75px;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
@@ -38,25 +41,26 @@ h1 {
     border: 2px solid rgb(255, 255, 255);
     padding: 4px 10px;
     border-radius: 40px;
+    margin: 0 auto;
     
 }
 .index input[type = "text"]:focus{
-    width: 550px;
+    width: 75%;
     border-color: #99ccff;
    
     
 }
 .index input[type = "button"]{
-    width: 170px;
+    width: 25%;
     height: 75px;
     text-align: center;
     color: white;
     background: none;
     border: 2px solid rgb(255, 255, 255);
-    padding: 4px 10px;
+    margin: 0 auto;
     border-radius: 40px;
     cursor: pointer;
-    font-size: 30px;
+    font-size:20px
     
    
    
@@ -74,8 +78,8 @@ h1 {
     
     <div class="index">
         <h1>Verificador de boçais</h1>
-        <input type="text" placeholder="Digite seu nome" id="nome">
-        <br><br><br>
+        <input type="text" placeholder="Nome" id="nome">
+        <br><br>
         <input type= "button" value="Checar" onclick="verificar()">
         
     </div>
