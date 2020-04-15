@@ -4,7 +4,71 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aula 1</title>
-    <link rel="stylesheet" href="estilo.css">
+    <style>
+        body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #cc99ff
+}
+h1 {
+    color: rgb(255, 255, 255);
+    padding: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+}
+.index {
+    background-color: lightcoral;
+    width: 50%;
+    height: 500px;
+    margin: 350px;
+    margin-top: 150px;
+    text-align: center;
+    box-shadow: 4px 4px 10px black;
+    border-radius: 24px;
+    
+}
+.index input[type = "text"]{
+    width: 380px;
+    height: 75px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    color: white;
+    background: none;
+    border: 2px solid rgb(255, 255, 255);
+    padding: 4px 10px;
+    border-radius: 40px;
+    
+}
+.index input[type = "text"]:focus{
+    width: 550px;
+    border-color: #99ccff;
+   
+    
+}
+.index input[type = "button"]{
+    width: 170px;
+    height: 75px;
+    text-align: center;
+    color: white;
+    background: none;
+    border: 2px solid rgb(255, 255, 255);
+    padding: 4px 10px;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 30px;
+    
+   
+   
+}
+.index input[type = "button"]:hover{
+   
+    border-color: #99ccff;
+    cursor: pointer;
+    background-color: white;
+    color: lightcoral;
+}
+    </style>
 </head>
 <body>
     
@@ -16,6 +80,23 @@
         
     </div>
 
-    <script src="script.js"></script>
+    <script>
+    function verificar() {
+        var nome = document.getElementById("nome")
+    
+    
+        if (nome.value == "") {
+            alert("Por favor, digite seu nome.")
+        }
+        else {
+            if (nome.value == "MARTIM" || nome.value == "Martim" || nome.value == "martim") {
+                alert("VOCE É FODA!")
+            }
+            else {
+                alert("Confirmado! Você é um boçal.")
+            }
+    }
+}
+    </script>
 </body>
 </html>
